@@ -1,5 +1,6 @@
 import React from 'react';
 import { withRouter } from 'react-router-dom';
+import Header from "../../components/Header/Header"
 class LandingPage extends React.Component {
     constructor(props) {
         super(props);
@@ -9,22 +10,9 @@ class LandingPage extends React.Component {
     }
     render() {
         return (
-            <div className="App">
-                <header className="App-header">
-                   
-                    <p>
-                        Edit <code>src/App.js</code> and save to reload.
-                </p>
-                    <a
-                        className="App-link"
-                        href="https://reactjs.org"
-                        target="_blank"
-                        rel="noopener noreferrer"
-                    >
-                        Learn React
-                </a>
-                </header>
-            </div>
+            <React.Fragment>
+                <Header />
+            </React.Fragment>
         );
     }
 }
